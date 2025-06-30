@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+:root {
+  --background: hsl(0, 0%, 100%);
+  --foreground: hsl(20, 14.3%, 4.1%);
+  --dark-primary: hsl(0, 0%, 6.7%);
+  --dark-secondary: hsl(0, 0%, 13.3%);
+  --light-bg: hsl(0, 0%, 97.6%);
+  --text-primary: hsl(0, 0%, 20%);
+  --text-secondary: hsl(0, 0%, 40%);
+  --nav-light: hsl(0, 0%, 80%);
+}
+@layer base {
+  body {
+    @apply font-sans antialiased;
+    background-color: var(--light-bg);
+    color: var(--text-primary);
+    font-family: Arial, sans-serif;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+}
+@layer utilities {
+  .bg-dark-primary {
+    background-color: var(--dark-primary);
+  }
+  
+  .bg-dark-secondary {
+    background-color: var(--dark-secondary);
+  }
+  
+  .bg-light-bg {
+    background-color: var(--light-bg);
+  }
+  
+  .text-text-primary {
+    color: var(--text-primary);
+  }
+  
+  .text-text-secondary {
+    color: var(--text-secondary);
+  }
+  
+  .text-nav-light {
+    color: var(--nav-light);
+  }
+}
